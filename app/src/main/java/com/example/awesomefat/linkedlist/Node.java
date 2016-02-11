@@ -27,6 +27,7 @@ public class Node
         System.out.println("***** Text Was Clicked: " + this.payload);
     }
 
+
     public void display(LinearLayout layout)
     {
         final Node myself = this;
@@ -44,7 +45,11 @@ public class Node
                 //and then ask the list to display itself, which should update the entire
                 //view.  That is to say, we will no longer need to hide ourself.
                 System.out.println("***** Text Was Clicked: " + payload);
-                valueLabel.setVisibility(View.GONE);
+                if(v == valueLabel)
+                {
+                    payload = null;
+                }
+
                 System.out.println("**** Position = " + ListCore.ll.indexOf(myself));
 
             }

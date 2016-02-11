@@ -39,10 +39,10 @@ public class MainActivity extends AppCompatActivity
         //ll.addFront("3");
         //ll.addFront("4");
         //ll.display();
-        ListCore.ll.addEnd("6");
-        ListCore.ll.addEnd("7");
-        ListCore.ll.addEnd("8");
-        ListCore.ll.display();
+        //ListCore.ll.addEnd("6");
+       // ListCore.ll.addEnd("7");
+       // ListCore.ll.addEnd("8");
+        //ListCore.ll.display();
 
         /*
         View v;
