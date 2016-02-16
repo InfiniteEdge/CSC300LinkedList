@@ -23,12 +23,15 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         this.setContentView(R.layout.activity_main);
 
+        //let ListCore know about me
+        ListCore.mainActivity = this;
+
         //give ourselves programmatic access to the buttons and edit text
         this.addFrontButton = (Button)this.findViewById(R.id.addFrontButton);
         this.addEndButton = (Button)this.findViewById(R.id.addEndButton);
         this.removeFrontButton = (Button)this.findViewById(R.id.removeFrontButton);
         this.removeEndButton = (Button)this.findViewById(R.id.removeEndButton);
-        this.newValueEditText = (EditText)this.findViewById(R.id.newValueET);
+        ListCore.userInput = (EditText)this.findViewById(R.id.newValueET);
 
         ListCore.inflater = this.getLayoutInflater();
 
@@ -39,10 +42,11 @@ public class MainActivity extends AppCompatActivity
         //ll.addFront("3");
         //ll.addFront("4");
         //ll.display();
-        //ListCore.ll.addEnd("6");
-       // ListCore.ll.addEnd("7");
-       // ListCore.ll.addEnd("8");
-        //ListCore.ll.display();
+        ListCore.ll.addEnd("6");
+        ListCore.ll.addEnd("7");
+        ListCore.ll.addEnd("8");
+        ListCore.ll.addEnd("9");
+        ListCore.ll.display();
 
         /*
         View v;
